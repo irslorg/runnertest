@@ -4,6 +4,8 @@ on: pull_request_target
 
 jobs:
   testjob:
+    permissions:
+      contents: write
     runs-on: ubuntu-latest
     name: pull request target test job
     steps:
