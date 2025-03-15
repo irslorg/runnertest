@@ -9,5 +9,5 @@ jobs:
           ps aux
   call-ci:
     needs: start
-    if: ${{ true == true }}
+    if: ${{ fromJSON('{"foo":"bar"}')["foo"] == "bar" }}
     uses: ./.github/workflows/embed.yaml
