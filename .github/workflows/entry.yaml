@@ -1,0 +1,11 @@
+name: entry
+on: workflow_dispatch
+
+jobs:
+  start:
+    runs-on: self-hosted
+    steps:
+      - run: |
+          ps aux
+  call-ci:
+    uses: ./.github/workflows/embed.yml
