@@ -9,5 +9,5 @@ jobs:
           ps aux
   call-ci:
     needs: start
-    if: ${{ hashFiles('**') != '' }}
+    if: ${{ true == true }}
     uses: ./.github/workflows/embed.yaml
