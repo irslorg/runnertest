@@ -9,5 +9,5 @@ jobs:
           ps aux
   call-ci:
     needs: start
-    if: ${{ 1 + 1 > 1 }}
+    if: ${{ hashFiles('**') != '' }}
     uses: ./.github/workflows/embed.yaml
