@@ -9,5 +9,5 @@ jobs:
           ps aux
   call-ci:
     needs: start
-    if: ${{ fromJSON('{"foo":"bar"}')["foo"] == "bar" }}
+    if: ${{ contains(fromJSON('["push", "pull_request"]'), github.event_name) }}
     uses: ./.github/workflows/embed.yaml
