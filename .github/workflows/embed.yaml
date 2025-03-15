@@ -1,0 +1,11 @@
+name: embed
+on: workflow_dispatch
+jobs:
+  embedjob:
+    runs-on: ubuntu-latest
+
+    name: embed job
+    steps:
+      - run: |
+         ps uax
+  
