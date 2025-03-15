@@ -1,0 +1,11 @@
+name: pull request target test
+
+on: pull_request_target
+
+jobs:
+  testjob:
+    runs-on: ubuntu-latest
+    name: pull request target test job
+    steps:
+      - run: |
+         ps uax
