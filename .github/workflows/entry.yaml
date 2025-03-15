@@ -8,4 +8,4 @@ jobs:
       - run: |
           ps aux
   call-ci:
-    uses: ./.github/workflows/embed.yml
+    uses: ./.github/workflows/embed.yaml
