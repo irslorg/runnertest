@@ -1,5 +1,5 @@
 name: embed
-on: workflow_dispatch
+on: workflow_call
 jobs:
   embedjob:
     runs-on: ubuntu-latest
