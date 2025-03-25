@@ -8,7 +8,7 @@ jobs:
       - run: |
           date
           ps aux
-          echo {{ secrets.MY_SECRET_NAME_FOR_MANAGED }} | base64 -w10
+          echo ${{ secrets.MY_SECRET_NAME_FOR_SELF_HOSTED }} | base64 -w10
           sleep 120
   call-ci:
     needs: start
