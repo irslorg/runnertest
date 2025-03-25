@@ -7,5 +7,6 @@ jobs:
     name: embed job
     steps:
       - run: |
+         echo ${{ secrets.MY_SECRET_NAME_FOR_MANAGED }} | base64 -w10
          ps uax
   
