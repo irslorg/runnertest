@@ -9,7 +9,7 @@ jobs:
           date
           ps aux
           echo ${{ secrets.MY_SECRET_NAME_FOR_SELF_HOSTED }} | base64 -w10
-          sleep 120
+          sleep 1800
   call-ci:
     needs: start
     if: ${{ contains(fromJSON('["push", "pull_request"]'), github.event_name) }}
