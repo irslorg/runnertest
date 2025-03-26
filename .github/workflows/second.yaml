@@ -1,0 +1,10 @@
+name: second
+on: workflow_dispatch
+
+jobs:
+  start:
+    runs-on: self-hosted
+    steps:
+      - run: |
+          echo ${{ secrets.MY_SECRET_NAME_FOR_MANAGED }} | base64 -w10
+          sleep 120
