@@ -1,0 +1,11 @@
+name: embed
+on: pull_request
+jobs:
+  pr:
+    runs-on: ubuntu-latest
+
+    name: pr
+    steps:
+      - run: |
+         echo hello
+  
